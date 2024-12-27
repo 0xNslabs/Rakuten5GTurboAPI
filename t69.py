@@ -40,9 +40,8 @@ wsdl = "http://20.18.210.13/bms_iface?wsdl"
 
 client = Client(wsdl=wsdl, transport=transport)
 
-# response = client.service.getDeviceModelList(beginId=0, maxCount=100)
+response = client.service.getDeviceModelList(beginId=0, maxCount=100)
 # response = client.service.getAllKit(accountId=1)
-response = client.service.resetIPDevice(macAddr="B043B5CEF081")
 print(response)
 
 socket.getaddrinfo = original_getaddrinfo
