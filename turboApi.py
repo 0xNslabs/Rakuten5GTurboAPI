@@ -41,7 +41,6 @@ def getEngineerPassword(deviceInfo):
     print(f"[INFO] Device CSN: {csn}")
 
     seed = deviceInfo.get("seed")
-    # Default values
     defaultImei = "Werg@noamtms1u2M3.M"
     defaultCsn = "XePrJc&o4m1m3122R3.A"
 
@@ -151,7 +150,6 @@ def execInstallFw(device_info):
     with open(device_info.get("fwImage"), "rb") as f:
         firmware_content = f.read()
 
-    # Create the multipart/form-data body
     multipart_data = (
         f"{boundary}\r\n"
         'Content-Disposition: form-data; name="FILE"; filename="firmware.ffw"\r\n'
@@ -283,11 +281,9 @@ def loadDK(deviceInfo):
 
 
 def execRequest(deviceInfo, dk, data):
-    # Use the same encrypted data as the working example for consistency
     encData = encrypt(dk, data)
-
     timestamp = str(int(time.time() * 1000))
-    # Ensure we use the correct data
+
     url = "http://{}/data/data.cgi?_={}".format(deviceInfo["turboIp"], timestamp)
     response = requests.post(url, data=encData)
 
