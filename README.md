@@ -27,7 +27,7 @@ This repository provides a Python API to exploit known vulnerabilities on Rakute
 
 2. Install the dependencies:
     ```sh
-    pip install -r requirements.txt
+    pip install requests cryptography
     ```
 
 ## Usage
