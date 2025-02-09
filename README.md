@@ -15,7 +15,6 @@ This repository provides a Python API to exploit known vulnerabilities on Rakute
 ## Prerequisites
 
 - Python 3.x
-- Required Python packages listed in `requirements.txt`
 
 ## Installation
 
@@ -27,7 +26,7 @@ This repository provides a Python API to exploit known vulnerabilities on Rakute
 
 2. Install the dependencies:
     ```sh
-    pip install requests cryptography
+    pip install zeep requests argparse cryptography
     ```
 
 ## Usage
